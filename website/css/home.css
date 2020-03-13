@@ -1,0 +1,238 @@
+*, *:Before, *:After {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background: #e5eff5;
+  text-align: center;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 430px 430px;
+      grid-template-columns: 430px 430px;
+  -ms-grid-rows: 295px 355px;
+      grid-template-rows: 295px 355px;
+  margin: 50px auto 50px auto;
+  text-align: left;
+}
+
+.container .item1 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+  background: #fff;
+  padding: 0 49px 0 49px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container .item1 h2 {
+  color: #2ab2af;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.container .item1 h3 {
+  color: #c0df34;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.container .item1 p {
+  color: #bec0c4;
+  line-height: 1.7;
+  font-size: 1rem;
+  padding-right: 50px;
+}
+
+.container .item2 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  padding: 0 45px 0 45px;
+  color: #fffAFA;
+  border-bottom-left-radius: 10px;
+  background: #2ab2af;
+}
+
+.container .item2 h2 {
+  padding-top: 37px;
+  font-size: 25px;
+}
+
+.container .item2 h4 {
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.container .item2 h4 .pmonth {
+  font-size: 20px;
+  padding-left: 10px;
+  display: inline-block;
+  color: rgba(140, 222, 220, 0.78);
+}
+
+.container .item2 p {
+  color: #ffe;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.container .item2 button {
+  color: #fff;
+  background-color: #c0df34;
+  height: 55px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+}
+
+.container .item2 button:hover {
+  color: #c0df34;
+  background: #fff;
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+
+.container .item3 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding: 0 45px 0 45px;
+  background: rgba(42, 178, 175, 0.8);
+  color: rgba(255, 250, 250, 0.8);
+  border-bottom-right-radius: 10px;
+}
+
+.container .item3 h2 {
+  padding-top: 37px;
+  font-size: 26px;
+}
+
+.container .item3 .item3List {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.atttribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.atttribution a.attribution {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 370px;
+        grid-template-columns: 370px;
+  }
+  .container .item1 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    padding: 0 30px 0 30px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 350px;
+  }
+  .container .item1 h2 {
+    padding-top: 10px;
+    color: #2ab2af;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .container .item1 h3 {
+    padding-top: 10px;
+    color: #c0df34;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .container .item1 p {
+    color: #bec0c4;
+    line-height: 2;
+    padding: 10px 0 0 0;
+    font-size: 16px;
+  }
+  .container .item2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    padding: 0 30px 0 30px;
+    color: #FFFAFA;
+    background: #2ab2af;
+    border-bottom-left-radius: 0;
+    height: 360px;
+  }
+  .container .item2 h2 {
+    padding-top: 20px;
+    font-size: 26px;
+  }
+  .container .item2 h4 {
+    font-size: 42px;
+    padding-bottom: 10px;
+  }
+  .container .item2 p {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .container .item2 button {
+    width: 300px;
+  }
+  .container .item3 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    background: rgba(42, 178, 175, 0.8);
+    color: rgba(255, 250, 250, 0.8);
+    border-radius: 0 0 10px 10px;
+    padding: 0 30px 0 30px;
+    height: 330px;
+  }
+  .container .item3 h2 {
+    padding-top: 20px;
+  }
+  .container .item3 .item3List {
+    padding-top: 10px;
+  }
+}
+/*# sourceMappingURL=home.css.map */
